@@ -1,0 +1,180 @@
+/* poppins font style from google font */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* shared styles */
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* header styles */
+header {
+  width: 85%;
+  height: 750px;
+  margin: 80px auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+
+nav li {
+  margin-right: 34px;
+}
+
+/* banner style */
+
+.banner-container {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.banner-content {
+  padding-right: 400px;
+}
+
+.banner-header {
+  color: #3a3a3a;
+  font-size: 3.25rem;
+  font-weight: 700;
+}
+
+.banner-description {
+  color: #3a3a3a;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn-primary {
+  padding: 10px 24px;
+  border-radius: 41px;
+  background: #e02c6d;
+  border: none;
+  color: white;
+}
+
+/* sponsors style */
+
+.sponsors-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding: 40px;
+  border: 1px solid #f1e4ff;
+}
+
+/* collections card styles */
+main {
+  max-width: 85%;
+  margin: 150px auto;
+}
+
+.populer-collection {
+  color: #3a3a3a;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+.collection-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 44px;
+}
+
+.collection-card {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+.collection-card img {
+  width: 100%;
+}
+
+.card-name {
+  color: #18191f;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.card-price {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.card-text {
+  color: #787885;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.see-more {
+  color: rgba(224, 44, 109, 0.87);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: end;
+  margin-top: 50px;
+}
+
+/* respossive styles */
+
+/* styles for mobile devices or small devices */
+
+@media screen and (max-width: 576px) {
+  .header {
+    width: 100%;
+  }
+  nav,
+  .banner-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav li {
+    margin: 5px;
+  }
+  .banner-container {
+    flex-direction: column-reverse;
+    background-image: 100%;
+    background-position: top;
+  }
+  .banner-content {
+    padding: 0;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .banner-img-container {
+    margin-top: 100px;
+  }
+  .banner-img {
+    width: 100%;
+    transform: translateY(70px);
+  }
+  .sponsors-container {
+    border: none;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .collection-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
